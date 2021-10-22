@@ -23,6 +23,6 @@ public class UserService {
     }
 
     public void removeUser(String name) {
-        users.remove(name);
+        users = users.stream().filter(t -> !t.name.equals(name)).collect(Collectors.toList());
     }
 }

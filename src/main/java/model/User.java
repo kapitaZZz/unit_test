@@ -11,7 +11,7 @@ import lombok.*;
 public class User {
 
     private int id;
-    String name;
+    public String name;
     private String lastName;
     private int age;
     private String email;
